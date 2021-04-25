@@ -24,7 +24,7 @@ def predict():
 
     
 
-    return render_template('index.html', prediction_text='Expected Profit from the Startup is  $ {}'.format(round(prediction[0][0])))
+    return render_template('index.html', prediction_text='Predicted Species is  $ {}'.format(round(prediction[0][0])))
 
 
 if __name__ == "__main__":
