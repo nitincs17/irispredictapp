@@ -19,7 +19,7 @@ def predict():
     petLength = float(request.form['petLength'])
     petWidth = float(request.form['petWidth'])
     
-    finalFeatures = np.concatenate((stateEncoded,np.array([[sepLength,sepWidth,petLength,petWidth]])) , axis = 1)
+    finalFeatures = np.array([[sepLength,sepWidth,petLength,petWidth]])
     prediction = model.predict(finalFeatures)
 
     
